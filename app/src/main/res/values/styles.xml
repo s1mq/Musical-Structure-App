@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="descriptionTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/text_view_padding</item>
+        <item name="android:layout_marginBottom">@dimen/text_view_padding</item>
+        <item name="android:textColor">@color/colorWhiteTransparent80</item>
+        <item name="android:background">@color/colorWhiteTransparent25</item>
+
+    </style>
+
 </resources>
