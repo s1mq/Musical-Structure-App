@@ -1,14 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicalstructureapp.MainActivity"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructureapp.MainActivity">
 
-    <TextView
-        style="@style/descriptionTextView"
-        android:text="Hey there you all testing this style"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            style="@style/descriptionTextView"
+            android:text="Home Screen \nIncludes the app logo and three interactable buttons" />
+
+        <LinearLayout
+            style="@style/logoLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/logoText"
+                    android:text="b" />
+
+                <TextView
+                    style="@style/logoTextTwo"
+                    android:layout_marginTop="16dp"
+                    android:text="lue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/logoText"
+                    android:text="p" />
+
+                <TextView
+                    style="@style/logoTextTwo"
+                    android:layout_marginBottom="16dp"
+                    android:text="lay" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/play"
+            style="@style/mainButtons"
+            android:drawableStart="@drawable/play_big_3"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/playlists"
+            style="@style/mainButtons"
+            android:drawableStart="@drawable/playlist_button"
+            android:text="Playlists" />
+
+        <Button
+            android:id="@+id/discover"
+            style="@style/mainButtons"
+            android:drawableStart="@drawable/discover_button"
+            android:text="Discover" />
+
+    </LinearLayout>
+
+
+</ScrollView>

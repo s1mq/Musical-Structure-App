@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructureapp.Playlists"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/descriptionTextView"
+        android:text="Playlist activity \nThis opens when the playlists button in the main activity is pressed. The activity will include playlists the user has saved and an option to add new ones. "
+        />
+
+    <Button
+        style="@style/playlistButtons"
+        android:text="+ Add new playlist"/>
+
+    <Button
+        android:id="@+id/playlist_one"
+        style="@style/playlistButtons"
+        android:text="Awesome Mix vol. 1"/>
+
+    <Button
+        android:id="@+id/playlist_two"
+        style="@style/playlistButtons"
+        android:text="Awesome mix vol. 2"/>
+
+    <Button
+        android:id="@+id/playlist_three"
+        style="@style/playlistButtons"
+        android:text="Coding hour"/>
+
+    <Button
+        android:id="@+id/playlist_four"
+        style="@style/playlistButtons"
+        android:text="Workout music"/>
+
+</LinearLayout>
