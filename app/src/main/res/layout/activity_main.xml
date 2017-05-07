@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +14,7 @@
 
         <TextView
             style="@style/descriptionTextView"
-            android:text="Home Screen \nIncludes the app logo and three interactable buttons" />
+            android:text="@string/main_activity_description" />
 
         <LinearLayout
             style="@style/logoLayout"
@@ -28,12 +27,12 @@
 
                 <TextView
                     style="@style/logoText"
-                    android:text="b" />
+                    android:text="@string/title_1_of_1" />
 
                 <TextView
                     style="@style/logoTextTwo"
                     android:layout_marginTop="16dp"
-                    android:text="lue" />
+                    android:text="@string/title_1_of_2" />
 
             </LinearLayout>
 
@@ -44,12 +43,12 @@
 
                 <TextView
                     style="@style/logoText"
-                    android:text="p" />
+                    android:text="@string/title_2_of_1" />
 
                 <TextView
                     style="@style/logoTextTwo"
                     android:layout_marginBottom="16dp"
-                    android:text="lay" />
+                    android:text="@string/title_2_of_2" />
 
             </LinearLayout>
 
@@ -60,19 +59,19 @@
             android:id="@+id/play"
             style="@style/mainButtons"
             android:drawableStart="@drawable/play_big_3"
-            android:text="Play" />
+            android:text="@string/play_button" />
 
         <Button
             android:id="@+id/playlists"
             style="@style/mainButtons"
             android:drawableStart="@drawable/playlist_button"
-            android:text="Playlists" />
+            android:text="@string/playlists_button" />
 
         <Button
             android:id="@+id/discover"
             style="@style/mainButtons"
             android:drawableStart="@drawable/discover_button"
-            android:text="Discover" />
+            android:text="@string/discover_button" />
 
     </LinearLayout>
 

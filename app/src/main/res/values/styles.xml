@@ -82,7 +82,7 @@
         <item name="android:layout_marginStart">@dimen/view_margin</item>
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">@dimen/button_text_size</item>
-        <item name="android:text">GENRE</item>
+        <item name="android:text">@string/song_genre</item>
     </style>
 
     <style name="dividerView" parent="AppTheme">
@@ -122,7 +122,7 @@
         <item name="android:layout_marginBottom">@dimen/album_layout_bottom_margin</item>
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">@dimen/button_text_size</item>
-        <item name="android:text">Artist name</item>
+        <item name="android:text">@string/artist_name</item>
     </style>
 
     <style name="albumtTextView" parent="AppTheme">
@@ -131,7 +131,7 @@
         <item name="android:layout_marginBottom">@dimen/album_layout_bottom_margin</item>
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">@dimen/album_text_size</item>
-        <item name="android:text">Album name</item>
+        <item name="android:text">@string/album_name</item>
     </style>
 
     <style name="albumArt" parent="AppTheme">
@@ -147,7 +147,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:text">Song info</item>
+        <item name="android:text">@string/song_name</item>
         <item name="android:layout_marginStart">@dimen/view_margin</item>
         <item name="android:layout_marginBottom">@dimen/white_space</item>
     </style>
