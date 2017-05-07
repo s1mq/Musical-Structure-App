@@ -15,6 +15,7 @@ public class Discover extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discover);
 
+        // Find the views that show the categories
         ImageView albumCoverOne = (ImageView) findViewById(R.id.album_cover_1);
         ImageView albumCoverTwo = (ImageView) findViewById(R.id.album_cover_2);
         ImageView albumCoverThree = (ImageView) findViewById(R.id.album_cover_3);
@@ -31,16 +32,16 @@ public class Discover extends AppCompatActivity {
         ImageView albumCoverFourteen = (ImageView) findViewById(R.id.album_cover_14);
         ImageView albumCoverFifteen = (ImageView) findViewById(R.id.album_cover_15);
 
-
-
-        View.OnClickListener nowPlayingClass = new View.OnClickListener(){
+        // Set a click listener that opens the now playing activity
+        View.OnClickListener nowPlayingClass = new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent nowPlayingIntent = new Intent (Discover.this, NowPlaying.class);
+            public void onClick(View view) {
+                Intent nowPlayingIntent = new Intent(Discover.this, NowPlaying.class);
                 startActivity(nowPlayingIntent);
             }
         };
 
+        // Assign that click listener to the playlist views
         albumCoverOne.setOnClickListener(nowPlayingClass);
         albumCoverTwo.setOnClickListener(nowPlayingClass);
         albumCoverThree.setOnClickListener(nowPlayingClass);
@@ -58,8 +59,5 @@ public class Discover extends AppCompatActivity {
         albumCoverThirteen.setOnClickListener(nowPlayingClass);
         albumCoverFourteen.setOnClickListener(nowPlayingClass);
         albumCoverFifteen.setOnClickListener(nowPlayingClass);
-
-
-
     }
 }

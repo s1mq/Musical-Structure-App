@@ -11,19 +11,27 @@
     <string name="discover_button">Discover</string>
     <string name="discovery_activity_description">Discovery activity \nActivity, where the user can
         interact with the application to search for new music and browse different songs suggested
-        to him or her.</string>
+        to him or her. \n Search bar has no functionality yet.</string>
     <string name="playlists_activity_description">Playlist activity \nThis opens when the playlists
         button in the main activity is pressed. The activity will include playlists the user has
-        saved and an option to add new ones. </string>
+        saved and an option to add new ones. \nAdding playlist function has not yet been
+        implemented.</string>
     <string name="new_playlist">+ Add new playlist</string>
     <string name="playlist_one">Awesome Mix Vol. 1</string>
     <string name="playlist_two">Awesome Mix Vol. 2</string>
     <string name="playlist_three">Coding hour</string>
     <string name="playlist_four">Workout music</string>
     <string name="now_playing_activity_description">Now Playing Activity \nThis Acticity opens up
-        when the user pushes the Play button or any of the albums or playlists."</string>
+        when the user pushes the Play button or any of the albums or playlists. \nNo media player
+        class for actual playback has not yet been implemented"</string>
     <string name="song_genre">GENRE</string>
     <string name="artist_name">Artist name</string>
     <string name="album_name">Album name</string>
     <string name="song_name">Song name</string>
+    <string name="album_cover_image">Album Art</string>
+    <string name="thumbs_up">Like button</string>
+    <string name="thumbs_down">Dislike button</string>
+    <string name="previous_song">Previous song button</string>
+    <string name="next_song">Next song button</string>
+    <string name="play">Play and pause music button</string>
 </resources>

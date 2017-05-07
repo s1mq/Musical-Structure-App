@@ -13,30 +13,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Find the views that show the categories
         Button playlistButton = (Button) findViewById(R.id.playlists);
         Button playButton = (Button) findViewById(R.id.play);
         Button discoverButton = (Button) findViewById(R.id.discover);
 
-        playlistButton.setOnClickListener(new View.OnClickListener(){
+        // Set click listeners to those categories
+        playlistButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent playlistsIntent = new Intent(MainActivity.this, Playlists.class);
                 startActivity(playlistsIntent);
             }
         });
 
-        playButton.setOnClickListener(new View.OnClickListener(){
+        playButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent nowPlayingIntent = new Intent (MainActivity.this, NowPlaying.class);
+            public void onClick(View view) {
+                Intent nowPlayingIntent = new Intent(MainActivity.this, NowPlaying.class);
                 startActivity(nowPlayingIntent);
             }
         });
 
-        discoverButton.setOnClickListener(new View.OnClickListener(){
+        discoverButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent discoverIntent = new Intent (MainActivity.this, Discover.class);
+            public void onClick(View view) {
+                Intent discoverIntent = new Intent(MainActivity.this, Discover.class);
                 startActivity(discoverIntent);
             }
         });

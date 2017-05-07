@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicalstructureapp.NowPlaying"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
-    android:background="@drawable/gradient">
+    tools:context="com.example.android.musicalstructureapp.NowPlaying">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,56 +14,60 @@
 
         <TextView
             style="@style/descriptionTextView"
-            android:text="@string/now_playing_activity_description"/>
+            android:text="@string/now_playing_activity_description" />
 
         <ImageView
-            style="@style/albumArt"/>
+            style="@style/albumArt"
+            android:contentDescription="@string/album_cover_image" />
 
         <TextView
             style="@style/artistTextView"
-            android:layout_marginStart="@dimen/view_margin"/>
+            android:layout_marginStart="@dimen/view_margin" />
 
         <TextView
             style="@style/albumtTextView"
-            android:layout_marginStart="@dimen/view_margin"/>
+            android:layout_marginStart="@dimen/view_margin" />
+
         <TextView
             style="@style/songTextView"
-            android:layout_marginStart="@dimen/view_margin"/>
+            android:layout_marginStart="@dimen/view_margin" />
 
-        <SeekBar
-            style="@style/seekBar"/>
+        <SeekBar style="@style/seekBar" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/view_margin"
-            android:layout_marginEnd="@dimen/view_margin">
+            android:layout_marginEnd="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin">
 
             <ImageButton
                 style="@style/imageButton"
-                android:src="@drawable/ic_thumb_up"/>
+                android:contentDescription="@string/thumbs_up"
+                android:src="@drawable/ic_thumb_up" />
 
             <ImageButton
                 style="@style/imageButton"
-                android:src="@drawable/ic_navigate_before"/>
+                android:contentDescription="@string/previous_song"
+                android:src="@drawable/ic_navigate_before" />
 
             <ImageButton
                 style="@style/imageButton"
-                android:src="@drawable/ic_play_arrow"/>
+                android:contentDescription="@string/play"
+                android:src="@drawable/ic_play_arrow" />
 
             <ImageButton
                 style="@style/imageButton"
-                android:src="@drawable/ic_navigate_next"/>
+                android:contentDescription="@string/next_song"
+                android:src="@drawable/ic_navigate_next" />
 
             <ImageButton
                 style="@style/imageButton"
-                android:src="@drawable/ic_thumb_down"/>
+                android:contentDescription="@string/thumbs_down"
+                android:src="@drawable/ic_thumb_down" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-
 
 
 </ScrollView>

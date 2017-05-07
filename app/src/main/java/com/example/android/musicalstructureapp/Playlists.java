@@ -13,19 +13,22 @@ public class Playlists extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlists);
 
+        // Find the views that show the categories
         Button playlistOne = (Button) findViewById(R.id.playlist_one);
         Button playlistTwo = (Button) findViewById(R.id.playlist_two);
         Button playlistThree = (Button) findViewById(R.id.playlist_three);
         Button playlistFour = (Button) findViewById(R.id.playlist_four);
 
+        // Set a click listener that opens the now playing activity
         View.OnClickListener nowPlayingClass = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nowPlayingIntent = new Intent (Playlists.this, NowPlaying.class);
+                Intent nowPlayingIntent = new Intent(Playlists.this, NowPlaying.class);
                 startActivity(nowPlayingIntent);
             }
         };
 
+        // Assign that click listener to the playlist views
         playlistOne.setOnClickListener(nowPlayingClass);
         playlistTwo.setOnClickListener(nowPlayingClass);
         playlistThree.setOnClickListener(nowPlayingClass);
