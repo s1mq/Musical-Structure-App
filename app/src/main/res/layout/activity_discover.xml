@@ -18,7 +18,8 @@
 
         <EditText
             style="@style/editText"
-            android:drawableStart="@drawable/search_icon"></EditText>
+            android:drawableStart="@drawable/search_icon">
+        </EditText>
 
         <TextView style="@style/genreTextView" />
 

@@ -11,7 +11,7 @@
     <string name="discover_button">Discover</string>
     <string name="discovery_activity_description">Discovery activity \nActivity, where the user can
         interact with the application to search for new music and browse different songs suggested
-        to him or her. \n Search bar has no functionality yet.</string>
+        to him or her. \nSearch bar has no functionality yet.</string>
     <string name="playlists_activity_description">Playlist activity \nThis opens when the playlists
         button in the main activity is pressed. The activity will include playlists the user has
         saved and an option to add new ones. \nAdding playlist function has not yet been
